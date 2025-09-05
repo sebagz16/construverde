@@ -24,3 +24,41 @@
 .hero h1, .hero p {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+/* --- Seção de Informações (Cards) --- */
+.info-section {
+    padding: 60px 20px; /* Adiciona espaço interno */
+    text-align: center; /* Centraliza o título h2 */
+    background-color: #f9f9f9; /* Um fundo cinza bem claro */
+}
+
+.cards-container {
+    display: flex; /* Alinha os cards em linha */
+    justify-content: center; /* Centraliza o conjunto de cards */
+    gap: 30px; /* Cria um espaço entre os cards */
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+    width: 300px;
+    text-align: left; /* Alinha o texto dos cards à esquerda */
+}
+
+/* --- Seção Sobre Nós (Duas Colunas) --- */
+.about-section {
+    display: flex; /* Cria o layout de duas colunas */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.about-image, .about-text {
+    flex: 1; /* Faz cada coluna ocupar 50% do espaço */
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
