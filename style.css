@@ -1,7 +1,7 @@
 /* Estilizando a seção principal (hero) */
 .hero {
     /* Define a imagem de fundo */
-    background-image: url('images/hero-background.jpg');
+    background-image: url('images/hero-background.png');
 
     /* Faz a seção ocupar a altura inteira da tela */
     height: 100vh;
