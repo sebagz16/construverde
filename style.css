@@ -1,78 +1,104 @@
+/* --- Estilos Globais --- */
 body {
-    font-family: 'Lato', sans-serif; /* Define Lato como a fonte padrão */
+    font-family: 'Lato', sans-serif;
     margin: 0;
 }
+
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif; /* Define Montserrat para todos os títulos */
+    font-family: 'Montserrat', sans-serif;
 }
-/* Estilizando a seção principal (hero) */
+
+/* --- Estilização do Cabeçalho (Header) --- */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 24px;
+    /* A cor branca será herdada do .hero */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a.botao-orcamento {
+    background-color: #1a7e6b;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* --- Seção Principal (Hero) --- */
 .hero {
-    /* Define a imagem de fundo */
-    background-image: url('images/hero-background.png');
-
-    /* Faz a seção ocupar a altura inteira da tela */
     height: 100vh;
-
-    /* Garante que a imagem de fundo cubra toda a área */
+    color: white;
+    background-image: 
+        linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), 
+        url('images/hero-background.jpg');
     background-size: cover;
     background-position: center;
-
-    /* Muda a cor do texto para branco */
-    color: white;
-
-    /* Centraliza o conteúdo (título, parágrafo e botões) */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Adiciona uma sombra ao texto para melhorar a leitura */
 .hero h1 {
-    font-size: 60px; /* Tamanho exato da referência */
-    font-weight: 700; /* Peso "Bold" (Negrito) */
+    font-size: 60px;
+    font-weight: 700;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo do título */
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 18px; /* Tamanho exato da referência */
-    font-weight: 400; /* Peso "Regular" */
+    font-size: 18px;
+    font-weight: 400;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* --- Seção de Informações (Cards) --- */
 .info-section {
-    padding: 60px 20px; /* Adiciona espaço interno */
-    text-align: center; /* Centraliza o título h2 */
-    background-color: #f9f9f9; /* Um fundo cinza bem claro */
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
 }
 
 .cards-container {
-    display: flex; /* Alinha os cards em linha */
-    justify-content: center; /* Centraliza o conjunto de cards */
-    gap: 30px; /* Cria um espaço entre os cards */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .card {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 300px;
-    text-align: left; /* Alinha o texto dos cards à esquerda */
+    text-align: left;
 }
 
 /* --- Seção Sobre Nós (Duas Colunas) --- */
 .about-section {
-    display: flex; /* Cria o layout de duas colunas */
-    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    display: flex;
+    align-items: center;
     padding: 60px 20px;
     gap: 40px;
 }
 
 .about-image, .about-text {
-    flex: 1; /* Faz cada coluna ocupar 50% do espaço */
+    flex: 1;
 }
 
 .about-image img {
@@ -80,45 +106,15 @@ h1, h2, h3 {
     border-radius: 8px;
 }
 
-/* força atualização */
-
-/* Fix 2: Add media query for responsiveness */
+/* --- Responsividade para Telas Pequenas --- */
 @media (max-width: 768px) {
     .cards-container,
     .about-section {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column;
         align-items: center;
     }
 
     .card {
-        width: 90%; /* Allow cards to take more width on small screens */
+        width: 90%;
     }
-}
-/* --- Estilos do Cabeçalho (Header) --- */
-header {
-    /* Posição e Layout */
-    position: absolute; /* Faz o header flutuar sobre o resto do conteúdo */
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Empurra o logo para a esquerda e a navegação para a direita */
-    align-items: center;
-
-    /* Estilo e Espaçamento */
-    padding: 20px 50px; /* 20px de espaço em cima/baixo, 50px nas laterais */
-    box-sizing: border-box; /* Garante que o padding não "estoure" a largura de 100% */
-}
-
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-nav a {
-    font-family: 'Lato', sans-serif;
-    color: white; /* Cor do texto dos links */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    margin-left: 25px; /* Cria um espaço entre os itens do menu */
 }
