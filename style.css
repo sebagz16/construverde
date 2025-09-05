@@ -14,11 +14,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 40px; 
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
 
 header .logo {
