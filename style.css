@@ -62,4 +62,18 @@
     width: 100%;
     border-radius: 8px;
 }
-# força atualização
+
+/* força atualização */
+
+/* Fix 2: Add media query for responsiveness */
+@media (max-width: 768px) {
+    .cards-container,
+    .about-section {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Allow cards to take more width on small screens */
+    }
+}
