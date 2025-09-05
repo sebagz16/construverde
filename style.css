@@ -28,9 +28,19 @@ h1, h2, h3 {
 }
 
 /* Adiciona uma sombra ao texto para melhorar a leitura */
-.hero h1, .hero p {
+.hero h1 {
+    font-size: 60px; /* Tamanho exato da referência */
+    font-weight: 700; /* Peso "Bold" (Negrito) */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo do título */
+}
+
+.hero p {
+    font-size: 18px; /* Tamanho exato da referência */
+    font-weight: 400; /* Peso "Regular" */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+
 /* --- Seção de Informações (Cards) --- */
 .info-section {
     padding: 60px 20px; /* Adiciona espaço interno */
@@ -83,4 +93,32 @@ h1, h2, h3 {
     .card {
         width: 90%; /* Allow cards to take more width on small screens */
     }
+}
+/* --- Estilos do Cabeçalho (Header) --- */
+header {
+    /* Posição e Layout */
+    position: absolute; /* Faz o header flutuar sobre o resto do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Empurra o logo para a esquerda e a navegação para a direita */
+    align-items: center;
+
+    /* Estilo e Espaçamento */
+    padding: 20px 50px; /* 20px de espaço em cima/baixo, 50px nas laterais */
+    box-sizing: border-box; /* Garante que o padding não "estoure" a largura de 100% */
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav a {
+    font-family: 'Lato', sans-serif;
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    margin-left: 25px; /* Cria um espaço entre os itens do menu */
 }
