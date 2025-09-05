@@ -29,15 +29,16 @@ header .logo {
 }
 
 header nav a {
-    color: #1a7e1a;
+    color: #305050;
     text-decoration: none;
     margin-left: 20px;
 }
 
 header nav a.botao-orcamento {
-    background-color: #1a7e6b;
+    background-color: #30506b;
     padding: 10px 20px;
     border-radius: 5px;
+    color: white;
 }
 
 /* --- Seção Principal (Hero) --- */
