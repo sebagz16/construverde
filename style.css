@@ -1,3 +1,10 @@
+body {
+    font-family: 'Lato', sans-serif; /* Define Lato como a fonte padrão */
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Define Montserrat para todos os títulos */
+}
 /* Estilizando a seção principal (hero) */
 .hero {
     /* Define a imagem de fundo */
