@@ -106,15 +106,37 @@ header nav a.botao-orcamento {
     border-radius: 8px;
 }
 
+/* --- Estilos para Páginas Internas --- */
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-content h2 {
+    color: #1a7e6b;
+}
+
+.page-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.page-content ul li {
+    margin-bottom: 10px;
+}
+
 /* --- Responsividade para Telas Pequenas --- */
 @media (max-width: 768px) {
-    .cards-container,
-    .about-section {
+    header {
         flex-direction: column;
-        align-items: center;
+        padding: 15px;
     }
 
-    .card {
-        width: 90%;
+    header nav {
+        margin-top: 15px;
     }
-}
+
+    .hero h1 {
+        font-size: 40px;
+    }
