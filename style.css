@@ -1,0 +1,8 @@
+body {
+    background-color: #282c34; /* Um cinza escuro, cor de "modo noturno" */
+    color: white;             /* Muda a cor de todo o texto para branco */
+}
+
+h1 {
+    text-align: center;       /* Centraliza o texto do título */
+}
