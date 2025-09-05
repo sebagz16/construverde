@@ -1,8 +1,26 @@
-body {
-    background-color: #282c34; /* Um cinza escuro, cor de "modo noturno" */
-    color: white;             /* Muda a cor de todo o texto para branco */
+/* Estilizando a seção principal (hero) */
+.hero {
+    /* Define a imagem de fundo */
+    background-image: url('images/hero-background.jpg');
+
+    /* Faz a seção ocupar a altura inteira da tela */
+    height: 100vh;
+
+    /* Garante que a imagem de fundo cubra toda a área */
+    background-size: cover;
+    background-position: center;
+
+    /* Muda a cor do texto para branco */
+    color: white;
+
+    /* Centraliza o conteúdo (título, parágrafo e botões) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    text-align: center;       /* Centraliza o texto do título */
+/* Adiciona uma sombra ao texto para melhorar a leitura */
+.hero h1, .hero p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
